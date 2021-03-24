@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Arcadia Ticketing</title>
+</head>
+
+<body id="home">
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Arcadia Ticketing <i class="fa fa-cube"></i></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html#now-playing-section" class="nav-link">Now Playing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#upcoming-section" class="nav-link">Upcoming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="theaters.html" class="nav-link">Theaters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="login-li" data-toggle="modal" data-target="#loginModal"><span
+                                class="theme-color oldSpan">Log In</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <!-- LOGIN MODAL -->
+    <div class="modal fade text-dark" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalTitle">
+                        LOG IN
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control form-control-lg" placeholder="Password">
+                        </div>
+                        <div class="form-group text-center">
+                            <label>
+                                Forgot <a href="#"><span class="theme-color">Password?</span></a>
+                            </label>
+                        </div>
+                        <div class="form-group text-center">
+                            <label>
+                                Create an account? <a href="sign-up.html"><span class="theme-color">Sign up</span></a>
+                            </label>
+                        </div>
+                        <input type="submit" value="Log in" class="btn theme-bg btn-block white-color">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEARCH BAR -->
+    <section id="mini-search-bar-section">
+        <div class="dark-overlay">
+            <div class="home-inner">
+                <div class="container p-4">
+                    <form id="search-form">
+                        <div class="form-group">
+                            <input type="text" id="search-bar" class="form-control" placeholder="Search a movie">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOVIE DATA -->
+    <section id="movie-section" class="bg-light text-muted py-5">
+        <div class="container">
+            <h3 class="justify-content-center">Payment Details</h3>
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="assets/movie1.jpg" alt="" class="img-fluid mb-3 movie-banner">
+                </div>
+                <div class="col-md-6">
+                    <p>Movie Title: <span id="movieTitle"></span></p>
+                    <p>Number of Seats: <span id="seatTotal"></span></p>
+                    <p>Date and Time: <span id="dateTime"></span></p>
+                    <p>City: <span id="cityChoice"></span></p>
+                    <p>Cinema: <span id="cinemaChoice"></span></p>
+                    <p>Ticket Holder: <span id="ticketHolder"></span></p>
+                    <div class="d-flex flex-row">
+                        <div class="p-4 align-self-start" id="payment">
+                            <h6>Payment Method</h6>
+                            <form id="payment-form">
+                                <div class="radio" class="form-control">
+                                    <label class="form-control"><input type="radio" name="method-child" class="mr-2"
+                                            id="method-1">BCA Virtual Account</label>
+                                </div>
+                                <div class="radio" class="form-control">
+                                    <label class="form-control"><input type="radio" name="method-child" class="mr-2"
+                                            id="method-2">GoPay</label>
+                                </div>
+                                <div class="radio" class="form-control">
+                                    <label class="form-control"><input type="radio" name="method-child" class="mr-2"
+                                            id="method-3">OVO</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-4" id="btn-size">
+                    <div class="row">
+                        <div class="col text-center" id="next-btn">
+                            <a href="#" data-toggle="modal" data-target="#paymentModal">
+                                <form id="payment-form">
+                                    <input type="submit" value="pay now" class="btn theme-bg white-color btn-block">
+                                </form>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- PAYMENT SUCCESS MODAL -->
+    <div class="modal fade text-dark" id="paymentModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h1>Payment Success!</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-dark white-color">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="py-4">
+                        <p class="lead">Arcadia Ticketing</p>
+                        <p>Copyright &copy; 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js-bootstrap/jquery.min.js"></script>
+    <script src="js-bootstrap/popper.min.js"></script>
+    <script src="js-bootstrap/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/seat.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/payment.js"></script>
+</body>
+
+</html>

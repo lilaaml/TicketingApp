@@ -1,0 +1,182 @@
+body {
+    background: #fff;
+    color: #333;
+}
+
+.navbar {
+    border-bottom: #ff5451 3px solid;
+    opacity: 0.8;
+}
+
+.navbar .login-form .form-control {
+    max-width: 150px;
+    border-radius: 0 2px 2px 0;
+}
+
+.navbar .login-dropdown .dropdown-menu {
+    width: 505px;
+    padding: 20px;
+    left: auto;
+    right: 0;
+}
+
+#next-btn a {
+    text-decoration: none;
+}
+
+.modal {
+    text-align: center;
+}
+  
+@media screen and (min-width: 768px) { 
+    .modal:before {
+      display: inline-block;
+      vertical-align: middle;
+      content: " ";
+      height: 100%;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    /* text-align: left; */
+    vertical-align: middle;
+}
+
+#search-bar-section {
+    background: url('../assets/bg.jpg') no-repeat;
+    min-height: 750px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#search-bar-section .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 750px;
+}
+
+#search-bar-section .home-inner {
+    padding-top: 150px;
+}
+
+#search-bar-section .card-form {
+    opacity: 0.8;
+}
+
+#now-playing-section {
+    min-height: 250px;
+}
+
+#upcoming-section {
+    min-height: 350px;
+}
+
+#now-playing-section a:hover, #upcoming-section a:hover {
+    text-decoration: none;
+    color: #ff5451;
+}
+
+#newsletter-card-form {
+    background: url('../assets/newsletter.png');
+    background-size: cover;
+}
+
+/* SIGN UP PAGE */
+#sign-up-page {
+    background: url('../assets/newsletter.png');
+    background-size: cover;
+}
+
+#sign-up-row {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+#sign-up-card-form {
+    background: #333;
+    opacity: 0.8;
+}
+
+.white-color {
+    color: white;
+}
+
+.green-color {
+    color: #22f11f;
+}
+
+.theme-color {
+    color: #ff5451;
+}
+
+.green-bg {
+    background: #22f11f;
+}
+
+.theme-bg {
+    background: #ff5451;
+}
+
+/* MOVIE PAGE */
+#mini-search-bar-section {
+    /* background: #fff; */
+    min-height: 50px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#mini-search-bar-section .home-inner {
+    padding-top: 100px;
+}
+
+#btn-size {
+    width: 60%;
+}
+
+#submit-btn {
+    text-decoration: none;
+}
+
+/* PAYMENT */
+#paymentModal .modal-content {
+    padding: 20px;
+}
+
+/* THEATERS */
+.boxes {
+    width: 80%;
+}
+
+#box-2 {
+    border-top: 2px solid #c0c0c0;
+    border-bottom: 2px solid #c0c0c0;
+}
+
+#theaters-section .page-title{
+    padding-top: 100px;
+}
+
+#theaters-section .boxes {
+    background-color: #2f2f2f;
+}
+
+#theaters-section .h4, #theaters-section p {
+    color: #c0c0c0;
+}
+
+#theaters-section .row {
+    padding-top: 25px;
+}
+
+/* PAYMENT */
+#movieTitle, #seatTotal, #dateTime, #cityChoice, #cinemaChoice, #ticketHolder {
+    color: #ff5451;
+}
